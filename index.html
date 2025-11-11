@@ -15,6 +15,10 @@
             <h2>Your Current Time Zone</h2>
             <div class="info-box">
                 <div class="info-row">
+                    <span class="label">Local Time:</span>
+                    <span class="value time-display" id="current-local-time">Loading...</span>
+                </div>
+                <div class="info-row">
                     <span class="label">Name Of Time Zone :</span>
                     <span class="value" id="current-timezone-name">Loading...</span>
                 </div>
@@ -27,6 +31,9 @@
                 <div class="info-row">
                     <span class="label">Offset STD:</span>
                     <span class="value" id="current-offset-std">-</span>
+                    <span class="label" style="margin-left: 20px;">(</span>
+                    <span class="value" id="current-abbreviation-std">-</span>
+                    <span class="label">)</span>
                 </div>
                 <div class="info-row">
                     <span class="label">Offset STD Seconds :</span>
@@ -35,6 +42,9 @@
                 <div class="info-row">
                     <span class="label">Offset DST :</span>
                     <span class="value" id="current-offset-dst">-</span>
+                    <span class="label" style="margin-left: 20px;">(</span>
+                    <span class="value" id="current-abbreviation-dst">-</span>
+                    <span class="label">)</span>
                 </div>
                 <div class="info-row">
                     <span class="label">Offset DST Seconds:</span>
@@ -68,6 +78,10 @@
             <h2>Your result</h2>
             <div class="info-box result-box">
                 <div class="info-row">
+                    <span class="label">Local Time:</span>
+                    <span class="value time-display" id="result-local-time">-</span>
+                </div>
+                <div class="info-row">
                     <span class="label">Name Of Time Zone :</span>
                     <span class="value" id="result-timezone-name">-</span>
                 </div>
@@ -80,6 +94,9 @@
                 <div class="info-row">
                     <span class="label">Offset STD:</span>
                     <span class="value" id="result-offset-std">-</span>
+                    <span class="label" style="margin-left: 20px;">(</span>
+                    <span class="value" id="result-abbreviation-std">-</span>
+                    <span class="label">)</span>
                 </div>
                 <div class="info-row">
                     <span class="label">Offset STD Seconds :</span>
@@ -88,6 +105,9 @@
                 <div class="info-row">
                     <span class="label">Offset DST :</span>
                     <span class="value" id="result-offset-dst">-</span>
+                    <span class="label" style="margin-left: 20px;">(</span>
+                    <span class="value" id="result-abbreviation-dst">-</span>
+                    <span class="label">)</span>
                 </div>
                 <div class="info-row">
                     <span class="label">Offset DST Seconds:</span>

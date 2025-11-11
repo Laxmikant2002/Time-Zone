@@ -65,6 +65,12 @@ h2 {
     font-weight: normal;
 }
 
+.time-display {
+    font-weight: bold !important;
+    color: #0066cc !important;
+    font-size: 16px !important;
+}
+
 /* Address Input Section */
 .address-section {
     background-color: #000;
@@ -141,6 +147,10 @@ h2 {
 
 .result-box .info-row .value {
     color: #fff;
+}
+
+.result-box .time-display {
+    color: #4CAF50 !important;
 }
 
 /* Responsive Design */
