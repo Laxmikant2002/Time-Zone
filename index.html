@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeZone API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TimeZone API</h1>
+        
+        <!-- Current Timezone Section -->
+        <section class="current-timezone">
+            <h2>Your Current Time Zone</h2>
+            <div class="info-box">
+                <div class="info-row">
+                    <span class="label">Name Of Time Zone :</span>
+                    <span class="value" id="current-timezone-name">Loading...</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Lat:</span>
+                    <span class="value" id="current-lat">-</span>
+                    <span class="label" style="margin-left: 100px;">Long:</span>
+                    <span class="value" id="current-long">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Offset STD:</span>
+                    <span class="value" id="current-offset-std">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Offset STD Seconds :</span>
+                    <span class="value" id="current-offset-std-seconds">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Offset DST :</span>
+                    <span class="value" id="current-offset-dst">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Offset DST Seconds:</span>
+                    <span class="value" id="current-offset-dst-seconds">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Country:</span>
+                    <span class="value" id="current-country">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Postcode:</span>
+                    <span class="value" id="current-postcode">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">City:</span>
+                    <span class="value" id="current-city">-</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Address Input Section -->
+        <section class="address-section">
+            <h2>Enter Address</h2>
+            <input type="text" id="address-input" placeholder="Enter your address (e.g., New York, USA)">
+            <button id="submit-btn">Submit</button>
+            <p class="error-message" id="error-message"></p>
+        </section>
+
+        <!-- Result Section -->
+        <section class="result-section">
+            <h2>Your result</h2>
+            <div class="info-box result-box">
+                <div class="info-row">
+                    <span class="label">Name Of Time Zone :</span>
+                    <span class="value" id="result-timezone-name">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Lat:</span>
+                    <span class="value" id="result-lat">-</span>
+                    <span class="label" style="margin-left: 100px;">Long:</span>
+                    <span class="value" id="result-long">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Offset STD:</span>
+                    <span class="value" id="result-offset-std">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Offset STD Seconds :</span>
+                    <span class="value" id="result-offset-std-seconds">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Offset DST :</span>
+                    <span class="value" id="result-offset-dst">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Offset DST Seconds:</span>
+                    <span class="value" id="result-offset-dst-seconds">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Country:</span>
+                    <span class="value" id="result-country">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Postcode:</span>
+                    <span class="value" id="result-postcode">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">City:</span>
+                    <span class="value" id="result-city">-</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Current Timezone Section */
+.current-timezone {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.current-timezone h2 {
+    color: #333;
+}
+
+.info-box {
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.info-row {
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.info-row .label {
+    color: #333;
+    font-weight: normal;
+}
+
+.info-row .value {
+    margin-left: 5px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Address Input Section */
+.address-section {
+    background-color: #000;
+    color: white;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.address-section h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#address-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #222;
+    color: white;
+}
+
+#address-input::placeholder {
+    color: #888;
+}
+
+#submit-btn {
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.error-message {
+    color: #ff6b6b;
+    margin-top: 15px;
+    display: none;
+    font-size: 14px;
+}
+
+/* Result Section */
+.result-section {
+    background-color: #000;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.result-section h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.result-box {
+    background-color: #1a1a1a;
+    border: 2px solid #444;
+}
+
+.result-box .info-row .label {
+    color: #fff;
+}
+
+.result-box .info-row .value {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .info-row {
+        font-size: 12px;
+    }
+
+    #address-input {
+        font-size: 12px;
+    }
+
+    #submit-btn {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+}
